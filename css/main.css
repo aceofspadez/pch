@@ -1,245 +1,51 @@
-	html,body{
-		background: #111; 
-		margin: 0; 
-		height: 100%;
-		font-size: 16px;
-	}
-	main {
-  			min-height: 100%;
-  			margin-bottom: -60px;
-	}
-	footer,
-.push {
-  height: 50px;
-  padding-bottom: 10px;
-}
-	header{
-		width: 100%; 
-		background: #56fc05; 
-		background: -moz-linear-gradient(top, #56fc05 0%, #adfb87 100%); 
-		background: -webkit-linear-gradient(top, #56fc05 0%,#adfb87 100%);
-		background: linear-gradient(to bottom, #56fc05 0%,#adfb87 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56fc05', endColorstr='#adfb87',GradientType=0 ); /* legacy browsers */
-		text-align: center;
-		font-family: 'Open Sans Condensed', Helvetica, sans-serif;
-		text-transform: uppercase;
-		font-weight: bold;
-		position: relative;
-		padding: 5px 0;
-		font-weight: bold;
-		border-bottom: 2px solid #fff;
-	}
-
-	header strong {font-size: 14px; padding: 0 10% 0 2%; display: block;}
-
-	header a {
-		position: absolute;
-		right: 0;
-		top: 50%;
-		text-decoration: none;
-		margin-top: -10px;
-	}
-	header a::after {
-		content: "X";
-	    position: absolute;
-	    text-indent: 0px;
-	    width: 20px;
-	    height: 20px;
-	    background: #000;
-	    border-radius: 100%;
-	    display: inline-block;
-	    right: 15px;
-	    line-height: 20px;
-	    color: #36fe36;
-	    font-size: 14px;
-	}
-	footer {}
-	footer .pch-foot {
-		display: inline-block;
-		width: 113px;
-		height: 50px;
-		background: url('../images/assets/pch-logo.gif') no-repeat 0 0;
-		text-indent: -99999px;
-	}
+html,body{background:#111;margin:0;height:100%;font-size:16px;}
+main{min-height:100%;margin-bottom:-60px;}
+footer,.push{height:50px;padding-bottom:10px;}
+header{width:100%;background:#56fc05;background:-moz-linear-gradient(top, #56fc05 0%, #adfb87 100%);background:-webkit-linear-gradient(top, #56fc05 0%,#adfb87 100%);background:linear-gradient(to bottom, #56fc05 0%,#adfb87 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#56fc05', endColorstr='#adfb87',GradientType=0 );text-align:center;font-family:'Open Sans Condensed', Helvetica, sans-serif;text-transform:uppercase;font-weight:bold;position:relative;padding:5px 0;font-weight:bold;border-bottom:2px solid #fff;}
+header strong{font-size:14px;padding:0 10% 0 2%;display:block;}
+header a{position:absolute;right:0;top:50%;text-decoration:none;margin-top:-10px;}
+header a::after{content:"X";position:absolute;text-indent:0px;width:20px;height:20px;background:#000;border-radius:100%;display:inline-block;right:15px;line-height:20px;color:#36fe36;font-size:14px;}
 
 
-	#pchAnimation {position: relative;}
-	#pchAnimation h1 {color: #fff; font-family: 'Nunito Sans', sans-serif; text-align: right; padding: 0 5% 0.5em 0; font-size: 28px; text-transform: uppercase; position: relative; z-index: 3; transition:opacity 1s ease-out;}
-	#pchAnimation h1 strong {color: #36fe36; display: block;}
-	
-	#pchAnimation #pyramid {
-    z-index: 1;
-    background: url('../images/assets/pyramid-bg.jpg') no-repeat 0 0;
-    min-height: 267px;
-    background-size: 320px;
-    margin: 0;
-    position: relative;
-    background-position: 0 1.2em;
-    opacity: 1;
-    transition:opacity 3s ease-out;
-	}
-	#pchAnimation #pyramid.off, .off {opacity: 0 !important;}
+#pchAnimation{position:relative;}
 
-	#pchAnimation #pyramid::before {
-	}
-	#pchAnimation #pyramid::after {
-		    content: " ";
-    width: 100%;
-    height: 30px;
-    display: block;
-    z-index: 4;
-    position: absolute;
-    bottom: 0;
-    background: #111;
-	}
-	#pchAnimation #pyramid figcaption {
-		overflow: hidden;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-	}
-	#pchAnimation #pyramid .arrow {
-		width: 0;
-	    height: 0;
-	    border-left: 20px solid transparent;
-	    border-right: 20px solid transparent;
-	    border-bottom: 15px solid #fff;
-	    position: absolute;
-	    left: 6.6em;
-	    top: 3.8em;
-	    filter: drop-shadow(3px 2px 1px #000);
-	    transition:top 3s ease-out, filter 0.5s, opacity 3s ease-out;
-	    z-index: 1;
-	    opacity: 1;
-	}
-	#pchAnimation #pyramid .arrow.closed {
-		top:13.87em;
-		filter:none;
-	}
-	#pchAnimation #pyramid .arrow::after {
-		    content: "";
-    width: 1.4em;
-    background: #fff;
-    display: block;
-    min-height: 10.1em;
-    position: absolute;
-    left: -0.6em;
-    top: 0.9em;
-    filter: none;
-    transition:min-height 0.1s ease-out, top 0.1s ease-out;
-	}
-	#pchAnimation #pyramid .arrow.closed::after {
-		min-height: 10.1em;
-		top: 10.9em;
-	}
+#pchAnimation h1{color:#fff;font-family:'Nunito Sans', sans-serif;text-align:right;padding:0 5% 0.5em 0;font-size:28px;text-transform:uppercase;position:relative;z-index:3;transition:opacity 1s ease-out;}
+#pchAnimation h1 strong{color:#36fe36;display:block;}
 
+#pchAnimation #pyramid{z-index:1;background:url('../images/assets/pyramid-bg.jpg') no-repeat 0 0;min-height:267px;background-size:320px;margin:0;position:relative;background-position:0 1.2em;opacity:1;transition:opacity 3s ease-out;}
+#pchAnimation #pyramid.off, .off{opacity:0 !important;}
+#pchAnimation #pyramid::before{}
+#pchAnimation #pyramid::after{content:" ";width:100%;height:30px;display:block;z-index:4;position:absolute;bottom:0;background:#111;}
+#pchAnimation #pyramid figcaption{overflow:hidden;position:absolute;top:0;bottom:0;right:0;left:0;}
+#pchAnimation #pyramid .arrow{width:0;height:0;border-left:20px solid transparent;border-right:20px solid transparent;border-bottom:15px solid #fff;position:absolute;left:6.6em;top:3.8em;filter:drop-shadow(3px 2px 1px #000);transition:top 3s ease-out, filter 0.5s, opacity 3s ease-out;z-index:1;opacity:1;}
+#pchAnimation #pyramid .arrow.closed{top:13.87em;filter:none;}
+#pchAnimation #pyramid .arrow::after{content:"";width:1.4em;background:#fff;display:block;min-height:10.1em;position:absolute;left:-0.6em;top:0.9em;filter:none;transition:min-height 0.1s ease-out, top 0.1s ease-out;}
+#pchAnimation #pyramid .arrow.closed::after{min-height:10.1em;top:10.9em;}
+#pchAnimation #pyramid .order-place,#pchAnimation #pyramid .no-order{font-family:'Open Sans', sans-serif;text-transform:uppercase;transition:opacity 3s ease-out;}
+#pchAnimation #pyramid .no-order span, #pchAnimation #pyramid .no-order::after{transition:opacity 0.3s ease-out;}
+#pchAnimation #pyramid .order-place::before{transition:opacity 3s ease-out;}
+#pchAnimation #pyramid .order-place.off::before{opacity:0;}
+#pchAnimation #pyramid .order-place.labelOn{opacity:1 !important;}
+#pchAnimation #pyramid .order-place::before, #pchAnimation #pyramid .no-order::before{content:"This is what we’d like to see";color:#fff;font-size:0.8em;position:absolute;left:5.7em;min-width:15.2em;top:0em;text-transform:initial;opacity:1;}
+#pchAnimation #pyramid .no-order::before{content:"Here's where you are now";top:4.4em;background:#000;z-index:10;height:2em;padding:0.8em 0;opacity:1;}
+#pchAnimation #pyramid .order-place, #pchAnimation #pyramid .no-order{color:#36fe36;position:absolute;top:0;width:5em;left:1em;}
+ #pchAnimation #pyramid .order-place::after, #pchAnimation #pyramid .no-order::after{content:" ";width:1.5em;height:0.03em;background:#36fe36;display:block;position:absolute;top:2.6em;left:3.9em;}
+#pchAnimation #pyramid .no-order{color:#f20303;position:absolute;bottom:2em;top:auto;width:5.5em;z-index:10;}
+#pchAnimation #pyramid .no-order::after{background:#f20303;top:3.1em;}
 
-	#pchAnimation #pyramid .order-place,
-	#pchAnimation #pyramid .no-order {
-		font-family: 'Open Sans', sans-serif;
-		text-transform: uppercase;
-		transition:opacity 3s ease-out;
-	}
-	#pchAnimation #pyramid .no-order span, #pchAnimation #pyramid .no-order::after {
-		transition: opacity 0.3s ease-out;
-	}
+#pchAnimation .customerMessage{font-family:'Open Sans', sans-serif;text-align:center;padding:1em;}
+#pchAnimation .customerMessage h2{color:#fff;font-size:1.1em;transition:opacity 4s ease-out;}
+#pchAnimation .customerMessage h3{font-size:0.9em;color:#43bdfc;line-height:1.3em;transition:opacity 8s ease-out;}
 
-	#pchAnimation #pyramid .order-place::before {transition:opacity 3s ease-out;}
-	#pchAnimation #pyramid .order-place.off::before{opacity: 0;}
-	#pchAnimation #pyramid .order-place.labelOn {opacity: 1 !important;}
-	#pchAnimation #pyramid .order-place::before, #pchAnimation #pyramid .no-order::before {
-		content: "This is what we’d like to see";
-    color: #fff;
-    font-size: 0.8em;
-    position: absolute;
-    left: 5.7em;
-    min-width: 15.2em;
-    top: 0em;
-    text-transform: initial;
-    opacity: 1;
-}
+footer{}
+footer .pch-foot{display:inline-block;width:113px;height:50px;background:url('../images/assets/pch-logo.gif') no-repeat 0 0;text-indent:-99999px;}
+.cont-btn{transition:opacity 5s ease-out, right 3s ease-out;position:absolute;font-family:arial;font-size:0.9em;text-shadow:1px 1px #1d70c3;right:5%;display:inline-block;text-decoration:none;border-radius:3px;padding:16px 80px 16px 20px;color:#fff;text-transform:uppercase;background:#3faae0;background:-moz-linear-gradient(top, #3faae0 0%, #2e8ac2 100%);background:-webkit-linear-gradient(top, #3faae0 0%,#2e8ac2 100%);background:linear-gradient(to bottom, #3faae0 0%,#2e8ac2 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#3faae0', endColorstr='#2e8ac2',GradientType=0 );}
+ .cont-btn::before{content:"";border-left:1px solid #308cc4;position:absolute;right:58px;top:0;bottom:0;}
+ .cont-btn::after{content:" ";width:0;height:0;border-top:13px solid transparent;border-left:14px solid #fff;border-bottom:13px solid transparent;vertical-align:middle;position:absolute;right:1.3em;top:50%;margin-top:-0.9em;}
+.cont-btn.off{right:10%;}
 
-	#pchAnimation #pyramid .no-order::before {
-		content: "Here's where you are now";
-		top: 4.4em;
-	    background: #000;
-	    z-index: 10;
-	    height: 2em;
-	    padding: 0.8em 0;
-	    opacity: 1;
-	}
-
-	#pchAnimation #pyramid .order-place, #pchAnimation #pyramid .no-order {    color: #36fe36;
-    position: absolute;
-    top: 0;
-    width: 5em;
-	left: 1em;
-	}
-
-    #pchAnimation #pyramid .order-place::after, #pchAnimation #pyramid .no-order::after {
-    	content: " ";
-    width: 1.5em;
-    height: 0.03em;
-    background: #36fe36;
-    display: block;
-    position: absolute;
-    top: 2.6em;
-    left: 3.9em;
-}
-
-	#pchAnimation #pyramid .no-order {color: #f20303; position: absolute; bottom: 2em; top:auto; width: 5.5em; z-index: 10;}
-	#pchAnimation #pyramid .no-order::after {background:#f20303; top: 3.1em;}
-
-	#pchAnimation .customerMessage {font-family: 'Open Sans', sans-serif; text-align: center; padding:1em;}
-	#pchAnimation .customerMessage h2 {color: #fff; font-size: 1.1em; transition: opacity 4s ease-out;}
-	#pchAnimation .customerMessage h3 {font-size: 0.9em; color: #43bdfc; line-height: 1.3em;  transition: opacity 8s ease-out;}
-	
-	.cont-btn { transition: opacity 5s ease-out, right 3s ease-out; position: absolute; font-family: arial; font-size: 0.9em; text-shadow: 1px 1px #1d70c3; right: 5%; display: inline-block; text-decoration: none; border-radius: 3px; padding: 16px 80px 16px 20px; color: #fff; text-transform: uppercase;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3faae0+0,2e8ac2+100 */
-background: #3faae0; /* Old browsers */
-background: -moz-linear-gradient(top, #3faae0 0%, #2e8ac2 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #3faae0 0%,#2e8ac2 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #3faae0 0%,#2e8ac2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3faae0', endColorstr='#2e8ac2',GradientType=0 ); /* IE6-9 */
-	}
-	 .cont-btn::before {
-		content: "";
-		border-left: 1px solid #308cc4;
-		position: absolute;
-		right: 58px;
-		top:0;
-		bottom: 0;
-	}
-	 .cont-btn::after {
-		content: " ";
-		    width: 0;
-		    height: 0;
-		    border-top: 13px solid transparent;
-		    border-left: 14px solid #fff;
-		    border-bottom: 13px solid transparent;
-		    vertical-align: middle;
-		    position: absolute;
-		    right: 1.3em;
-		    top: 50%;
-		    margin-top: -0.9em;
-	}
-
-	.cont-btn.off {right: 10%;}
-
-
-	.star {
-      width: 0;
-      height: 0;
-      border-bottom: 27.9px solid #72e372;
-      border-right: 27.9px solid transparent;
-      text-indent: -99999px;
-      display: inline-block;
-      left: 6.54em;
-      position: absolute;
-      top: 1.7em;
-	}
+.star{width:0;height:0;border-bottom:27.9px solid #72e372;border-right:27.9px solid transparent;text-indent:-99999px;display:inline-block;left:6.54em;position:absolute;top:1.7em;}
+.button-glow {animation: glowing 1000ms infinite;}
 
 @keyframes glowing {
   0% {filter: drop-shadow(3px 2px 5px #fff); border-bottom-color: #6ee16e;}
@@ -248,9 +54,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3faae0', end
   100% {filter: drop-shadow(3px 2px 20px #fff); border-bottom-color: #f3f717; }
 }
 
-.button-glow {
-  animation: glowing 1000ms infinite;
-}
+
 
 
 
@@ -258,72 +62,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3faae0', end
 and (min-width : 768px)
 and (max-width : 4024px) {
 
-.star {
-      border-bottom: 44.8px solid #72e372;
-    border-right: 44.8px solid transparent;
-    left: 9.94em;
-    top: 1.8em;
-	}
-
-header strong {font-size: 32px;}
-
-
-header a::after {
-    width: 30px;
-    height: 30px;
-    background: #000;
-    border-radius: 100%;
-    display: inline-block;	
-    line-height: 30px;
-    font-size: 24px;
-}
-
-#pchAnimation #pyramid {    min-width: 430px;
-    position: absolute;
-    width: 690px;
-    top: 4em;
-    min-height: 385px;
-	background-size: 484px;
-}
-#pchAnimation #pyramid::after {height: 37px; bottom:0 }
-	#pchAnimation #pyramid .order-place {top:1.4em;}
-	#pchAnimation #pyramid .order-place, #pchAnimation #pyramid .no-order {font-size: 1.1em; left: 1.6em;}
-	#pchAnimation #pyramid .order-place::before {left: 6em; top: -1.2em;}
-	#pchAnimation #pyramid .order-place::after, #pchAnimation #pyramid .no-order::after {
-		content: " ";
-    width: 1em;
-    height: 0.1em;
-    display: block;
-    position: absolute;
-    top: 1.7em;
-    left: 6em;
-	}
-	#pchAnimation #pyramid .order-place::after {width: 3.1em;left: 3.9em; top: 1.7em;}
-
-#pchAnimation #pyramid .no-order {width: 6.3em;}
-#pchAnimation #pyramid .no-order::before {top: 3em; opacity: 1;}
-#pchAnimation #pyramid .arrow {
-	    border-left: 24px solid transparent;
-    border-right: 27.1px solid transparent;
-    border-bottom: 21px solid #fff;
-        left: 10.4em;
-    top: 5em;
-}
-#pchAnimation #pyramid .arrow::after {
-	min-height: 15.9em;
-}
-
-#pchAnimation #pyramid .arrow.closed {
-	top: 20.45em;
-}
-
-#pchAnimation h1 strong { font-size: 1.42em;}
-#pchAnimation .customerMessage {position: relative; z-index: 2;padding: 0 2.5em 0 26em;text-align: right;}
-#pchAnimation .customerMessage h2 {font-size: 1.5em;}
-#pchAnimation .customerMessage h3 {font-size: 1.2em; padding: 3em 0 0 1em;}
-
-.cont-btn {bottom: 15px;}
-footer .pch-foot {left: 0.5em; position: relative;}
+	.star{border-bottom:44.8px solid #72e372;border-right:44.8px solid transparent;left:9.94em;top:1.8em;}
+	header strong{font-size:32px;}
+	header a::after{width:30px;height:30px;background:#000;border-radius:100%;display:inline-block;line-height:30px;font-size:24px;}
+	
+	#pchAnimation #pyramid{min-width:430px;position:absolute;width:690px;top:4em;min-height:385px;background-size:484px;}
+	#pchAnimation #pyramid::after{height:37px;bottom:0 }
+	#pchAnimation #pyramid .order-place{top:1.4em;}
+	#pchAnimation #pyramid .order-place, #pchAnimation #pyramid .no-order{font-size:1.1em;left:1.6em;}
+	#pchAnimation #pyramid .order-place::before{left:6em;top:-1.2em;}
+	#pchAnimation #pyramid .order-place::after, #pchAnimation #pyramid .no-order::after{content:" ";width:1em;height:0.1em;display:block;position:absolute;top:1.7em;left:6em;}
+	#pchAnimation #pyramid .order-place::after{width:3.1em;left:3.9em;top:1.7em;}
+	#pchAnimation #pyramid .no-order{width:6.3em;}
+	#pchAnimation #pyramid .no-order::before{top:3em;opacity:1;}
+	#pchAnimation #pyramid .arrow{border-left:24px solid transparent;border-right:27.1px solid transparent;border-bottom:21px solid #fff;left:10.4em;top:5em;}
+	#pchAnimation #pyramid .arrow::after{min-height:15.9em;}
+	#pchAnimation #pyramid .arrow.closed{top:20.45em;}
+	
+	#pchAnimation h1 strong{font-size:1.42em;}
+	#pchAnimation .customerMessage{position:relative;z-index:2;padding:0 2.5em 0 26em;text-align:right;}
+	#pchAnimation .customerMessage h2{font-size:1.5em;}
+	#pchAnimation .customerMessage h3{font-size:1.2em;padding:3em 0 0 1em;}
+	
+	.cont-btn{bottom:15px;}
+	footer .pch-foot{left:0.5em;position:relative;}
 }
 
 
