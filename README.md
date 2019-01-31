@@ -1,3 +1,14 @@
+Alice- You can download the complete project here.  All project requirements have been fullfilled with features that include:
+
+	- Mobile-first Design/Responsive
+	- All CSS Animations/Transitions
+	- Only One Image (Pyramid)
+	- CSS Fonts
+
+Thank you!
+
+-------------------------------------------------------------------
+
 Home Work
 Using the PSD provided and the instructions below create a working stand alone, working component.  Feel free to use jQuery, Tweenmax or vanilla Javascript and CSS. 
 
